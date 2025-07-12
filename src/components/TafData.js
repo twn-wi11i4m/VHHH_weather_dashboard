@@ -16,10 +16,13 @@ function TafData() {
   const fetchTafData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(
+      const proxyUrl = "https://api.allorigins.win/get?url=";
+      const targetUrl = encodeURIComponent(
         "https://aviationweather.gov/api/data/taf?ids=VHHH&hours=0&format=json"
       );
-      const data = await response.json();
+      const response = await fetch(proxyUrl + targetUrl);
+      const result = await response.json();
+      const data = JSON.parse(result.contents);
 
       if (data && data.length > 0 && data[0].rawTAF) {
         setTafData(formatTafData(data[0].rawTAF));

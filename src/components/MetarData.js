@@ -8,10 +8,13 @@ function MetarData() {
   const fetchMetarData = async () => {
     try {
       setLoading(true);
-      const response = await fetch(
+      const proxyUrl = "https://api.allorigins.win/get?url=";
+      const targetUrl = encodeURIComponent(
         "https://aviationweather.gov/api/data/metar?ids=VHHH&hours=0&format=json"
       );
-      const data = await response.json();
+      const response = await fetch(proxyUrl + targetUrl);
+      const result = await response.json();
+      const data = JSON.parse(result.contents);
 
       if (data && data.length > 0 && data[0].rawOb) {
         setMetarData(data[0].rawOb);

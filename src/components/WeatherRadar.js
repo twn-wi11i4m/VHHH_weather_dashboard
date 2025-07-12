@@ -12,9 +12,9 @@ function WeatherRadar() {
     return () => clearInterval(interval);
   }, []);
 
-  const radar256Url = `http://pda.weather.gov.hk/radar/rad_256_320/rad256_6.jpg`;
-  const radar128Url = `http://pda.weather.gov.hk/radar/rad_128_320/rad128_6.jpg`;
-  const radar64Url = `http://pda.weather.gov.hk/radar/rad_064_320/rad064_6.jpg`;
+  const radar256Url = `https://pda.weather.gov.hk/radar/rad_256_320/rad256_6.jpg`;
+  const radar128Url = `https://pda.weather.gov.hk/radar/rad_128_320/rad128_6.jpg`;
+  const radar64Url = `https://pda.weather.gov.hk/radar/rad_064_320/rad064_6.jpg`;
 
   return (
     <div className="row">
