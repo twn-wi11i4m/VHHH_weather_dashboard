@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 function WeatherWebcam() {
-  const [setTimestamp] = useState(Date.now());
+  const [timestamp, setTimestamp] = useState(Date.now());
 
   // Update webcam images every 10 minutes
   useEffect(() => {

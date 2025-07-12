@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function WeatherRadar() {
   const [timestamp, setTimestamp] = useState(Date.now());
@@ -8,7 +8,7 @@ function WeatherRadar() {
     const interval = setInterval(() => {
       setTimestamp(Date.now());
     }, 600000);
-    
+
     return () => clearInterval(interval);
   }, []);
 
