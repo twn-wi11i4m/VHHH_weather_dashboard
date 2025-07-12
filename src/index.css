@@ -52,6 +52,27 @@ body {
   margin-top: 10px;
 }
 
+.atis-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.atis-container {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.atis-title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .loading {
   font-style: italic;
   color: #555;
