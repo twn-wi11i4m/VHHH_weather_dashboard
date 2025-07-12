@@ -4,6 +4,7 @@ A simple React app displaying real-time weather information for Hong Kong Intern
 
 ## Features
 
+- Current time in Hong Kong and UTC
 - Live METAR and TAF data
 - Weather radar images (256 km, 128 km, 64 km)
 - Airport webcam views (Northeast & Southeast)
