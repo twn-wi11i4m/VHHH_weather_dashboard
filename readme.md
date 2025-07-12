@@ -1,6 +1,48 @@
-# VHHH Weather
+# VHHH Weather Dashboard
 
-This is a simple React app that displays the weather for VHHH (Hong Kong International Airport).
+A simple React app displaying real-time weather information for Hong Kong International Airport (VHHH).
+
+## Features
+
+- Live METAR and TAF data
+- Weather radar images (256 km, 128 km, 64 km)
+- Airport webcam views (Northeast & Southeast)
+- Auto-refresh for all data sources
+
+## Demo
+
+Access the live app on Cloudflare Pages: [https://vhhhweather.williamntw.com](https://vhhhweather.williamntw.com)
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/twn-wi11i4m/VHHH_weather_dashboard.git
+cd VHHH_weather_dashboard
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details
 
 ---
 
