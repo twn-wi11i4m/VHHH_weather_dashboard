@@ -7,6 +7,7 @@ A simple React app displaying real-time weather information for Hong Kong Intern
 - Live METAR and TAF data
 - Weather radar images (256 km, 128 km, 64 km)
 - Airport webcam views (Northeast & Southeast)
+- Live ATIS information for arrivals and departures
 - Auto-refresh for all data sources
 
 ## Demo
