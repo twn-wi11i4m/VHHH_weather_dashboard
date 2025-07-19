@@ -19,7 +19,10 @@ function AtisData() {
     const url = proxyUrl + encodeURIComponent(targetUrl);
 
     try {
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        method: "GET",
+        signal: AbortSignal.timeout(10000), // 10 seconds timeout
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);

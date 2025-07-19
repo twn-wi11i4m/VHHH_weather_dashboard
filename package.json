@@ -1,6 +1,7 @@
 {
   "name": "vhhh-weather",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "proxy": "https://vhhhweather.williamntw.com/",
   "author": {
     "name": "William N"
   },

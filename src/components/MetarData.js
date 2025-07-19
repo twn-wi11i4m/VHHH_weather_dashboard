@@ -12,7 +12,10 @@ function MetarData() {
       const targetUrl = encodeURIComponent(
         "https://aviationweather.gov/api/data/metar?ids=VHHH&hours=0&format=json"
       );
-      const response = await fetch(proxyUrl + targetUrl);
+      const response = await fetch(proxyUrl + targetUrl, {
+        method: "GET",
+        signal: AbortSignal.timeout(10000), // 10 seconds timeout
+      });
       const result = await response.json();
       const data = JSON.parse(result.contents);
 
